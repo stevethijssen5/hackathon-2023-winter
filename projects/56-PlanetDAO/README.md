@@ -1,7 +1,7 @@
-Name - summary of the project
+Name - summary of the project:
 PlanetDAO - DAO as a service to Empower Your Community with Trust: PlanetDAO gives any community the possibility to use a DAO for the best community experience, regardless the size of the community.
 
-Problem being addressed 
+Problem being addressed: 
 Community is key for many organisations, specially like NGOs and small organisations. Based on experience and research we found four difficulties:
 
 (1) Engage and giving members a voice
@@ -9,7 +9,7 @@ Community is key for many organisations, specially like NGOs and small organisat
 (3) The payment and processes are not always transparent for donators
 (4) Get revenue to achieve goals as community
 
-Solution
+Solution:
 That's why we created PlanetDAO: DAO as a service, to Empower Your Community with Trust. PlanetDAO gives any community the possibility to create a decentralized autonomous organization (DAO) to empower and grow their community. Everything with just a couple clicks. PlanetDAO is integrated with the Polkadot SDK, MoonBeam and Bifrost. Start your DAO today and give everyone in your community a voice!
 
 Please view presentation for more information about technical,  business, scale, team and other parts:
@@ -22,7 +22,7 @@ During the hackathon we put PlanetDAO live on the domain name: http://www.planet
 Repository link: https://github.com/PlanetDAO/PlanetDAO-Polkadot-Winter
 
 
-Market
+Market:
 According to Forbes, the total market capitalization of all DAO tokens at roughly 21 billion and will grow  
 
 The market of Content Management Systems (CMS) will grow extremely in the coming years, according to Statista: 
@@ -34,12 +34,12 @@ Source: https://www.statista.com/outlook/tmo/software/enterprise-software/conten
 
 
 
-Technology implementation
+Technology implementation:
 Category 3: Building a blockchain based on Polkadot SDK
 We created PlanetDAO Parachain from Substrate template and deployed it on https://planetdao.net. We have used it on Login, Signup, DAO pages and using @polkadot/api for transacting. We implemented the following three chains:
-Content, social network chain
-Decentralized storage chain
-DAO chain
+(1) Content, social network chain
+(2) Decentralized storage chain
+(3) DAO chain
 
 Content, social network chain: On the login and signup page, the account information is being saved to polkadot sdk (PlanetDAO Parachain). For login and signup there is a different extrinsic for each of them. We have also added getter functions. Using Polkadot/api package we are retrieving and doing call transactions.
 
@@ -56,11 +56,7 @@ We integrated XCM at the time of donations. This makes it possible that the dona
 
 
 
-
-
-
 (2) Moonbeam challenge - on chain governance and cross-chain integration capabilities
-
 
 Customization: In Web2 organisations can create their own customised platform with tools like WordPress, JIMDO and Wix. PlanetDAO makes it possible to create a customised DAO platform with the benefits of Web3 with just a couple clicks. This makes it possible for a community manager to create and customise their own DAO. For the builder (DAO customization) we are using grapes.js node modules. First we are saving html at the time of creating a DAO template. Then we are showing that html template in the customization builder and dao page. When a DAO manager wants to customise the dao page, then we are loading the already saved html in smart contract. When the manager is done with customization, then it clicks the save button. After that, it will show a metmask popup to save the information. We have also created a custom component (Buttons). 
 
@@ -72,7 +68,6 @@ Batch and cross chain DAO: We have integrated batch precompile which makes it po
 Conviction Voting: PlanetDAO makes it possible to let the community decide with voting protocol. For example the community can decide how to invest the money. Members can submit an idea and can vote on the submitted ideas. The idea with the most support will be automatically executed.
 
 Multichain DAOs: For creating daos, goals, ideas, messages, vote, etc. we are using hyperlane. So, user can create those from other chains (eg. Celo, BNB or Goerli). Also, we have used Batch precompiles. Using it people can send multiple transactions at once. Other than these, we are using wormhole to send transfers to the moonbase network from other chains (such as Celo, BNB, Goerli). 
-
 
 Profile Page: The summary gives an overview how active you are in a community, like total messages read, total dao created, total ideas created, total donated, total ideas replied stats, etc.. How more active you are, how more batches you can earn from the community.
 The summary tab also gives an overview of Top Daos, Top Ideas, Top Donated Ideas, and Top Replies of the user.
